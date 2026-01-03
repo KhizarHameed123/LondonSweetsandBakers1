@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SweetBakers | Artisanal Bakery & Breads</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+  <link rel="manifest" href="favi/site.webmanifest">
+
+  <link rel="stylesheet" href="assets/css/Coutom.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/photo/logo.png" width="130" alt="SweetBakers Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sweets.html">Sweets</a></li>
+          <li class="nav-item"><a class="nav-link active" href="bakery.html">Bakery</a></li>
+          <li class="nav-item"><a class="nav-link" href="gift-hampers.html">Gift Hampers</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-dark position-relative">
+            <i class="bi bi-cart3 fs-5"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+          </a>
+          <a href="Contact.html" class="btn btn-outline-primary">Login</a>
+          <a href="Contact.html" class="btn btn-primary">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="page-header2" data-aos="fade-down">
+    <div class="container">
+      <h1>Artisanal Bakery & Fresh Breads</h1>
+      <p>Discover our exquisite collection of premium cakes, fresh cream delights, and artisanal breads—crafted daily
+        with passion and the finest ingredients.</p>
+    </div>
+  </section>
+
+
+  <div class="container category-filter" data-aos="fade-up">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="premium">Premium Cakes</button>
+      <button class="filter-btn" data-filter="freshcream">Fresh Cream Cakes</button>
+      <button class="filter-btn" data-filter="bread">Artisanal Breads</button>
+      <button class="filter-btn" data-filter="pastry">Pastries</button>
+    </div>
+  </div>
+
+
+  <div class="container products-grid">
+    <div class="section-header" data-aos="fade-up">
+      <h2>Premium Signature Cakes</h2>
+      <p>Indulge in our collection of decadent, handcrafted cakes made with premium ingredients for your special
+        occasions.</p>
+    </div>
+
+    <div class="row" id="premiumCakesContainer">
+
+    </div>
+  </div>
+
+
+  <div class="container section-divider" data-aos="fade-in">
+    <span><i class="bi bi-stars me-2"></i>Fresh Cream Collection</span>
+  </div>
+
+
+  <div class="container products-grid">
+    <div class="section-header" data-aos="fade-up">
+      <h2>Fresh Cream Delights</h2>
+      <p>Light, fluffy, and irresistibly creamy—our fresh cream cakes are perfect for any celebration.</p>
+    </div>
+
+    <div class="row" id="freshCreamCakesContainer">
+
+    </div>
+  </div>
+
+
+  <section class="container my-5 py-5 text-center" data-aos="zoom-in">
+    <div class="p-5 rounded" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+      <h2 class="text-white mb-4">Need a Custom Cake?</h2>
+      <p class="text-white mb-4">Let our master bakers create the perfect custom cake for your special occasion. From
+        weddings to birthdays, we'll bring your vision to life.</p>
+      <a href="contact.html" class="btn btn-light btn-lg px-5">Order Custom Cake</a>
+    </div>
+  </section>
+
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-5">
+          <img src="assets/photo/logo.png" alt="SweetBakers Logo" class="mb-4" width="150">
+          <p class="mb-4">Crafting exceptional baked goods with passion, tradition, and the finest ingredients since
+            2008.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sardarkhizar83@gmail.com"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6 mb-5">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sweets.html">Sweets</a></li>
+            <li><a href="bakery.html">Bakery</a></li>
+            <li><a href="gift-hampers.html">Gift Hampers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="footer-title">Customer Service</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="footer-title">Contact Us</h5>
+          <div class="contact-info">
+            <p><i class="bi bi-geo-alt"></i> London Sweets & Bakers, London</p>
+            <p><i class="bi bi-telephone"></i> +44 20 7123 4567</p>
+            <p><i class="bi bi-envelope"></i> London@sweet&bakers.com</p>
+            <p><i class="bi bi-clock"></i> Mon-Sat: 7am-8pm, Sun: 8am-6pm</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2023 SweetBakers. All rights reserved. | Crafted with <i
+            class="bi bi-heart-fill text-danger"></i> for baking enthusiasts</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProductTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img id="modalProductImage" src="" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+              <h4 class="mb-3" id="modalProductName"></h4>
+              <p id="modalProductDescription" class="text-muted mb-4"></p>
+              <div class="d-flex align-items-center mb-4">
+                <span class="product-price fs-3" id="modalProductPrice"></span>
+                <span class="badge bg-success ms-3" id="modalProductBadge"></span>
+              </div>
+
+              <div class="quantity-control">
+                <button class="quantity-btn" id="decreaseQty">-</button>
+                <input type="number" id="quantity" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn" id="increaseQty">+</button>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold">Special Instructions (Optional)</label>
+                <textarea class="form-control" rows="3"
+                  placeholder="Any special requests, messages, or dietary requirements..."></textarea>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="fw-bold">Total:</span>
+                <span class="total-price" id="modalTotalPrice"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+          <button class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+
+    var premiumCakesData = [
+      {
+        id: 1,
+        title: "Milk Cake",
+        description: "Delicate sponge cake soaked in three types of milk, topped with creamy frosting and caramel drizzle.",
+        image: "assets/photo/Bakery/PremiumCake1.png",
+        price: "$34.99",
+        category: "premium",
+        badge: "Best Seller"
+      },
+      {
+        id: 2,
+        title: "Chocolate Cadbury Cake",
+        description: "Rich chocolate cake layered with Cadbury chocolate ganache and chocolate shavings.",
+        image: "assets/photo/Bakery/PremiumCake2.png",
+        price: "$39.99",
+        category: "premium",
+        badge: "Popular"
+      },
+      {
+        id: 3,
+        title: "Chocolate Malt Cake",
+        description: "Decadent chocolate cake with malted chocolate frosting and crunchy malt balls.",
+        image: "assets/photo/Bakery/PremiumCake3.png",
+        price: "$36.99",
+        category: "premium",
+        badge: ""
+      },
+      {
+        id: 4,
+        title: "Ferrero Classic Cake",
+        description: "Hazelnut chocolate cake with Ferrero Rocher pieces and chocolate-hazelnut cream.",
+        image: "assets/photo/Bakery/PremiumCake4.png",
+        price: "$42.99",
+        category: "premium",
+        badge: "Premium"
+      },
+      {
+        id: 5,
+        title: "Nutella Cake",
+        description: "Moist chocolate cake filled and frosted with creamy Nutella, topped with hazelnuts.",
+        image: "assets/photo/Bakery/PremiumCake5.png",
+        price: "$38.99",
+        category: "premium",
+        badge: ""
+      },
+      {
+        id: 6,
+        title: "Red Velvet",
+        description: "Classic red velvet cake with cream cheese frosting and white chocolate curls.",
+        image: "assets/photo/Bakery/PremiumCake6.png",
+        price: "$35.99",
+        category: "premium",
+        badge: "Classic"
+      },
+      {
+        id: 7,
+        title: "Lotus Three Milk Cake",
+        description: "Tres leches cake infused with Lotus biscuit flavor and caramelized topping.",
+        image: "assets/photo/Bakery/PremiumCake7.png",
+        price: "$41.99",
+        category: "premium",
+        badge: "New"
+      },
+      {
+        id: 8,
+        title: "Toffee Three Milk Cake",
+        description: "Traditional tres leches cake with toffee sauce and caramelized sugar topping.",
+        image: "assets/photo/Bakery/PremiumCake8.png",
+        price: "$37.99",
+        category: "premium",
+        badge: ""
+      }
+    ];
+
+    var freshCreamCakesData = [
+      {
+        id: 9,
+        title: "American Truffle",
+        description: "Light sponge cake with whipped cream and chocolate truffle pieces.",
+        image: "assets/photo/Bakery/FreshCreamCake1.png",
+        price: "$28.99",
+        category: "freshcream",
+        badge: ""
+      },
+      {
+        id: 10,
+        title: "Black Forest",
+        description: "Classic Black Forest cake with layers of chocolate sponge, cherries, and fresh cream.",
+        image: "assets/photo/Bakery/FreshCreamCake2.png",
+        price: "$32.99",
+        category: "freshcream",
+        badge: "Classic"
+      },
+      {
+        id: 11,
+        title: "Chocolate Chip",
+        description: "Vanilla sponge with fresh cream and chocolate chips throughout.",
+        image: "assets/photo/Bakery/FreshCreamCake3.png",
+        price: "$26.99",
+        category: "freshcream",
+        badge: ""
+      },
+      {
+        id: 12,
+        title: "Chocolate Fudge",
+        description: "Chocolate sponge layered with chocolate fudge and fresh whipped cream.",
+        image: "assets/photo/Bakery/FreshCreamCake4.png",
+        price: "$31.99",
+        category: "freshcream",
+        badge: ""
+      },
+      {
+        id: 13,
+        title: "Milk Fai Cake",
+        description: "Delicate milk-flavored sponge with light fresh cream frosting.",
+        image: "assets/photo/Bakery/FreshCreamCake4.png",
+        price: "$27.99",
+        category: "freshcream",
+        badge: ""
+      },
+      {
+        id: 14,
+        title: "Chocolate Truffle",
+        description: "Rich chocolate cake with layers of chocolate truffle cream and fresh cream.",
+        image: "assets/photo/Bakery/FreshCreamCake5.png",
+        price: "$33.99",
+        category: "freshcream",
+        badge: "Popular"
+      },
+      {
+        id: 15,
+        title: "Coffee Crunch",
+        description: "Coffee-flavored sponge with coffee cream and crunchy praline pieces.",
+        image: "assets/photo/Bakery/FreshCreamCake6.png",
+        price: "$29.99",
+        category: "freshcream",
+        badge: ""
+      },
+      {
+        id: 16,
+        title: "Coffee Walnut",
+        description: "Coffee sponge cake with walnut pieces and coffee-infused fresh cream.",
+        image: "assets/photo/Bakery/FreshCreamCake7.png",
+        price: "$30.99",
+        category: "freshcream",
+        badge: ""
+      },
+      {
+        id: 17,
+        title: "Pineapple",
+        description: "Light sponge with pineapple pieces and pineapple-flavored fresh cream.",
+        image: "assets/photo/Bakery/FreshCreamCake8.png",
+        price: "$27.99",
+        category: "freshcream",
+        badge: ""
+      },
+      {
+        id: 18,
+        title: "Real Chocolate",
+        description: "Pure chocolate sponge with chocolate fresh cream and chocolate shavings.",
+        image: "assets/photo/Bakery/FreshCreamCake9.png",
+        price: "$34.99",
+        category: "freshcream",
+        badge: "Premium"
+      }
+    ];
+
+
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+
+    function renderProducts(filter = 'all') {
+      var premiumContainer = document.getElementById('premiumCakesContainer');
+      var freshContainer = document.getElementById('freshCreamCakesContainer');
+
+      premiumContainer.innerHTML = '';
+      freshContainer.innerHTML = '';
+
+      let filteredPremium = filter === 'all' || filter === 'premium' ? premiumCakesData : [];
+      let filteredFresh = filter === 'all' || filter === 'freshcream' ? freshCreamCakesData : [];
+
+
+      filteredPremium.forEach(product => {
+        var col = document.createElement('div');
+        col.className = 'col-lg-3 col-md-4 col-sm-6';
+        col.setAttribute('data-aos', 'fade-up');
+
+        col.innerHTML = createProductCard(product);
+        premiumContainer.appendChild(col);
+      });
+
+
+      filteredFresh.forEach(product => {
+        var col = document.createElement('div');
+        col.className = 'col-lg-3 col-md-4 col-sm-6';
+        col.setAttribute('data-aos', 'fade-up');
+
+        col.innerHTML = createProductCard(product);
+        freshContainer.appendChild(col);
+      });
+    }
+
+
+    function createProductCard(product) {
+      return `
+        <div class="product-card" data-category="${product.category}">
+          <div class="product-img-container">
+            <img src="${product.image}" alt="${product.title}">
+            <div class="product-overlay"></div>
+            ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">${product.title}</h5>
+            <p class="product-description">${product.description}</p>
+            <div class="product-price">${product.price}</div>
+            <div class="product-actions">
+              <button class="btn btn-view" data-bs-toggle="modal" data-bs-target="#productModal" onclick="openModal(${product.id})">
+                <i class="bi bi-eye me-2"></i>View Details
+              </button>
+              <button class="btn btn-buy" onclick="addToCart(${product.id})">
+                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', function () {
+
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+
+        var filter = this.getAttribute('data-filter');
+        renderProducts(filter);
+
+
+        var premiumSection = document.querySelector('.products-grid:nth-of-type(1)');
+        var divider = document.querySelector('.section-divider');
+        var freshSection = document.querySelector('.products-grid:nth-of-type(2)');
+
+        if (filter === 'premium') {
+          freshSection.style.display = 'none';
+          divider.style.display = 'none';
+          premiumSection.style.display = 'block';
+        } else if (filter === 'freshcream') {
+          premiumSection.style.display = 'none';
+          divider.style.display = 'none';
+          freshSection.style.display = 'block';
+        } else {
+          premiumSection.style.display = 'block';
+          divider.style.display = 'block';
+          freshSection.style.display = 'block';
+        }
+      });
+    });
+
+
+    function openModal(productId) {
+      let product = premiumCakesData.find(p => p.id === productId);
+      if (!product) {
+        product = freshCreamCakesData.find(p => p.id === productId);
+      }
+      if (!product) return;
+
+      document.getElementById('modalProductTitle').textContent = 'Cake Details';
+      document.getElementById('modalProductName').textContent = product.title;
+      document.getElementById('modalProductImage').src = product.image;
+      document.getElementById('modalProductImage').alt = product.title;
+      document.getElementById('modalProductDescription').textContent = product.description;
+      document.getElementById('modalProductPrice').textContent = product.price;
+      document.getElementById('modalProductBadge').textContent = product.badge || '';
+      document.getElementById('modalTotalPrice').textContent = product.price;
+
+
+      document.getElementById('quantity').value = 1;
+
+
+      var badgeElement = document.getElementById('modalProductBadge');
+      badgeElement.style.display = product.badge ? 'inline-block' : 'none';
+    }
+
+
+    document.getElementById('increaseQty')?.addEventListener('click', function () {
+      var input = document.getElementById('quantity');
+      input.value = parseInt(input.value) + 1;
+      updateTotalPrice();
+    });
+
+    document.getElementById('decreaseQty')?.addEventListener('click', function () {
+      var input = document.getElementById('quantity');
+      if (parseInt(input.value) > 1) {
+        input.value = parseInt(input.value) - 1;
+        updateTotalPrice();
+      }
+    });
+
+    document.getElementById('quantity')?.addEventListener('input', updateTotalPrice);
+
+    function updateTotalPrice() {
+      var qty = parseInt(document.getElementById('quantity').value) || 1;
+      var priceText = document.getElementById('modalProductPrice').textContent;
+      var priceMatch = priceText.match(/\$(\d+\.?\d*)/);
+      if (priceMatch) {
+        var price = parseFloat(priceMatch[1]);
+        var total = price * qty;
+        document.getElementById('modalTotalPrice').textContent = `$${total.toFixed(2)}`;
+      }
+    }
+
+
+    function addToCart(productId) {
+      let product = premiumCakesData.find(p => p.id === productId);
+      if (!product) {
+        product = freshCreamCakesData.find(p => p.id === productId);
+      }
+      if (!product) return;
+
+
+      var cartBadge = document.querySelector('.badge');
+      var currentCount = parseInt(cartBadge.textContent) || 0;
+      cartBadge.textContent = currentCount + 1;
+
+
+      showToast(`${product.title} added to cart!`, 'success');
+    }
+
+
+    function showToast(message, type = 'info') {
+      var toast = document.createElement('div');
+      toast.className = `toast-container position-fixed bottom-0 end-0 p-3`;
+      toast.innerHTML = `
+        <div class="toast show" role="alert">
+          <div class="toast-header bg-${type === 'success' ? 'success' : 'info'} text-white">
+            <strong class="me-auto">SweetBakers</strong>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">
+            ${message}
+          </div>
+        </div>
+      `;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 3000);
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      renderProducts();
+
+
+      document.getElementById('addToCartBtn')?.addEventListener('click', function () {
+        var modal = bootstrap.Modal.getInstance(document.getElementById('productModal'));
+        var productName = document.getElementById('modalProductName').textContent;
+
+        let productId = premiumCakesData.find(p => p.title === productName)?.id;
+        if (!productId) {
+          productId = freshCreamCakesData.find(p => p.title === productName)?.id;
+        }
+
+        if (productId) {
+          addToCart(productId);
+          modal.hide();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
